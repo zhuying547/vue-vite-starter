@@ -16,6 +16,8 @@
   "author": "zhuying547 <zhuying547@qq.com> (https://github.com/zhuying547)",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
     "eslint": "^8.41.0",

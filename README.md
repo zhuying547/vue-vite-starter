@@ -48,3 +48,24 @@ Vite 将预构建的依赖项缓存到 `node_modules/.vite` 中。
   }
 }
 ```
+
+## Git 提交规范
+
+Messages must be matched by the following regex:
+
+```regexp
+/^(revert: )?(feat|fix|polish|docs|style|refactor|perf|test|workflow|ci|chore|types)(\(.+\))?: .{1,50}/
+```
+
+If the prefix is feat, fix or perf, it will appear in the changelog.
+
+```shell
+npx husky add .husky/commit-msg  'npx --no -- commitlint --edit ${1}'
+```
+
+commit-msg: 在提交代码时校验提交信息是否符合规范。
+使用 commitlint 校验提交信息是否符合预定义的规范。同时，${1} 指定了提交信息文件的路径，通过编辑提交信息文件，确保提交的信息符合要求。
+
+### 解释一下
+
+`npx --no-install` 和 `npx --no` 之间的区别：
