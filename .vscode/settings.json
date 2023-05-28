@@ -1,0 +1,8 @@
+{
+  "javascript.suggest.paths": false,
+  "typescript.suggest.paths": false,
+  "path-intellisense.mappings": {
+    "@": "${workspaceFolder}/src"
+  },
+  "eslint.validate": ["javascript", "javascript", "vue"]
+}
