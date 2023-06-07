@@ -1,7 +1,31 @@
 {
-  "include": ["node_modules/tdesign-vue-next/global.d.ts"],
   "compilerOptions": {
-    "isolatedModules": true,
-    "strict": true
-  }
+    "allowJs": true,
+    "baseUrl": ".",
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "paths": {
+      "~/*": ["src/*"]
+    },
+    "skipLibCheck": true
+  },
+  "vueCompilerOptions": {
+    "target": 3
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.vue",
+    "node_modules/tdesign-vue-next/global.d.ts"
+  ]
 }
