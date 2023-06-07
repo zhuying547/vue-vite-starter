@@ -1,0 +1,7 @@
+{
+  "include": ["node_modules/tdesign-vue-next/global.d.ts"],
+  "compilerOptions": {
+    "isolatedModules": true,
+    "strict": true
+  }
+}

@@ -72,4 +72,3 @@ npm pkg set scripts.prepare="husky install"
 npx husky add .husky/pre-commit 'npx --no-install lint-staged'
 npx husky add .husky/commit-msg 'npx --no-install commitlint --edit ${1}'
 ```
-
