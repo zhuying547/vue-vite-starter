@@ -10,7 +10,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "lint:fix": "eslint --ext .vue,.js,.jsx,.ts,.tsx ./ --max-warnings 0 --fix"
+    "lint": "eslint --ext .vue,.js,.jsx,.ts,.tsx src",
+    "lint:fix": "eslint --ext .vue,.js,.jsx,.ts,.tsx src --max-warnings 0 --fix"
   },
   "keywords": [],
   "author": "zhuying547 <zhuying547@qq.com> (https://github.com/zhuying547)",
@@ -29,7 +30,7 @@
     "less": "^4.1.3",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
-    "typescript": "^5.1.3",
+    "typescript": "~5.0.0",
     "unplugin-auto-import": "^0.16.4",
     "unplugin-vue-components": "^0.25.1",
     "vite": "^4.3.9",

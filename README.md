@@ -72,3 +72,35 @@ npm pkg set scripts.prepare="husky install"
 npx husky add .husky/pre-commit 'npx --no-install lint-staged'
 npx husky add .husky/commit-msg 'npx --no-install commitlint --edit ${1}'
 ```
+
+## typescript-eslint
+
+ESLint的默认JavaScript解析器无法直接解析TypeScript特定的语法，并且其规则无法直接访问TypeScript的类型信息。
+
+为了解决这个问题，我们使用一个名为"typescript-eslint"的工具。"typescript-eslint"插件提供了以下功能：
+
+1. 解析TypeScript语法：它允许ESLint解析TypeScript代码，并将TypeScript的语法转换为ESLint可以理解的格式。这样，ESLint就可以分析和处理TypeScript文件，而不仅限于JavaScript文件。
+2. TypeScript类型信息的支持："typescript-eslint"创建了一组工具，使ESLint规则能够使用TypeScript的类型信息。这意味着ESLint规则可以访问变量的类型、函数的参数类型、返回类型等TypeScript的类型信息，并根据这些信息进行代码检查和提示。
+3. 特定于TypeScript的规则："typescript-eslint"提供了一系列特定于TypeScript的规则。这些规则利用了TypeScript的类型信息，并通过检查类型不一致、类型错误、未使用的变量等来提供更准确的代码质量和一致性检查。
+
+通过将"typescript-eslint"与ESLint配合使用，我们可以在TypeScript项目中实现更强大和准确的代码检查。它允许我们检测类型错误、未使用的变量、不一致的类型注解等与TypeScript相关的问题，并通过使用TypeScript的类型信息提供更准确的提示和警告。
+
+```shell
+pnpm add --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript
+```
+
+WARNING: You are currently running a version of TypeScript which is not officially supported by @typescript-eslint/typescript-estree.
+
+You may find that it works just fine, or you may not.
+
+SUPPORTED TYPESCRIPT VERSIONS: >=3.3.1 <5.1.0 这个包要求安装`typescript@~5.0.0`
+
+## eslint-plugin-vue
+
+"eslint-plugin-vue"是一个ESLint插件，专门为Vue.js项目提供代码检查和规范性指导。它包含一系列的规则，用于检查和强制执行Vue.js代码的最佳实践和约定。
+
+```shell
+pnpm add --save-dev eslint eslint-plugin-vue
+```
+
+这个插件需要配置parser为vue-eslint-parser去解析`.vue`文件。
