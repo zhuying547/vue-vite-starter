@@ -1,21 +1,26 @@
 <template>
-  <div>HelloWorld</div>
-  <button @click="increment">Count is: {{ count }}</button>
+  <t-layout>
+    <t-header>
+      <t-head-menu>
+        <t-menu-item value=""> 菜单内容一 </t-menu-item>
+        <t-menu-item value=""> 菜单内容二 </t-menu-item>
+        <t-menu-item value=""> 菜单内容三 </t-menu-item>
+        <template #operations>
+          <a href="javascript:;"
+            ><t-icon class="t-menu__operations-icon" name="search"
+          /></a>
+          <a href="javascript:;"
+            ><t-icon class="t-menu__operations-icon" name="notification-filled"
+          /></a>
+          <a href="javascript:;"
+            ><t-icon class="t-menu__operations-icon" name="home"
+          /></a>
+        </template>
+      </t-head-menu>
+    </t-header>
+    <t-content>
+      <div>Content</div>
+    </t-content>
+    <t-footer> Copyright </t-footer>
+  </t-layout>
 </template>
-
-<script setup>
-import { onMounted, ref } from 'vue'
-const count = ref(0)
-
-function increment() {
-  count.value++
-}
-onMounted(() => {
-  console.log(`The initial count is ${count.value}.`)
-})
-</script>
-<style scoped>
-button {
-  font-weight: bold;
-}
-</style>

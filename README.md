@@ -1,6 +1,6 @@
 # vite-vue-starter
 
-`index.html` 中的 URL 将被自动替换，因此不再需要 `%PUBLIC_PATH%` 占位符了。
+`index.html` 中的 URL 将被自动替换。
 
 在 `package.json` 中开启 `"type": "module"`。目的是告诉 Node.js 以 ECMAScript 模块（ESM）的方式解析和执行 JavaScript 文件，而不是使用 CommonJS 模块规范。当 `"type": "module"` 被设置时，Node.js 将默认以 ESM 的方式处理 JavaScript 文件，支持使用 `import` 和 `export` 语法进行模块导入和导出，而不需要使用 `require()` 和 `module.exports`。
 
