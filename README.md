@@ -4,7 +4,7 @@
 
 在 `package.json` 中开启 `"type": "module"`。目的是告诉 Node.js 以 ECMAScript 模块（ESM）的方式解析和执行 JavaScript 文件，而不是使用 CommonJS 模块规范。当 `"type": "module"` 被设置时，Node.js 将默认以 ESM 的方式处理 JavaScript 文件，支持使用 `import` 和 `export` 语法进行模块导入和导出，而不需要使用 `require()` 和 `module.exports`。
 
-> 这里需要注意如果有工具的配置文件内容是以 `module.exports` 导出时，记得将改为 JSON 文件避免报错
+> 这里需要将配置文件改为 JSON 文件避免报错
 
 ## NPM 依赖解析和预构建
 
@@ -75,15 +75,15 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit ${1}'
 
 ## typescript-eslint
 
-ESLint的默认JavaScript解析器无法直接解析TypeScript特定的语法，并且其规则无法直接访问TypeScript的类型信息。
+ESLint 的默认 JavaScript 解析器无法直接解析 TypeScript 特定的语法，并且其规则无法直接访问 TypeScript 的类型信息。
 
 为了解决这个问题，我们使用一个名为"typescript-eslint"的工具。"typescript-eslint"插件提供了以下功能：
 
-1. 解析TypeScript语法：它允许ESLint解析TypeScript代码，并将TypeScript的语法转换为ESLint可以理解的格式。这样，ESLint就可以分析和处理TypeScript文件，而不仅限于JavaScript文件。
-2. TypeScript类型信息的支持："typescript-eslint"创建了一组工具，使ESLint规则能够使用TypeScript的类型信息。这意味着ESLint规则可以访问变量的类型、函数的参数类型、返回类型等TypeScript的类型信息，并根据这些信息进行代码检查和提示。
-3. 特定于TypeScript的规则："typescript-eslint"提供了一系列特定于TypeScript的规则。这些规则利用了TypeScript的类型信息，并通过检查类型不一致、类型错误、未使用的变量等来提供更准确的代码质量和一致性检查。
+1. 解析 TypeScript 语法：它允许 ESLint 解析 TypeScript 代码，并将 TypeScript 的语法转换为 ESLint 可以理解的格式。这样，ESLint 就可以分析和处理 TypeScript 文件，而不仅限于 JavaScript 文件。
+2. TypeScript 类型信息的支持："typescript-eslint"创建了一组工具，使 ESLint 规则能够使用 TypeScript 的类型信息。这意味着 ESLint 规则可以访问变量的类型、函数的参数类型、返回类型等 TypeScript 的类型信息，并根据这些信息进行代码检查和提示。
+3. 特定于 TypeScript 的规则："typescript-eslint"提供了一系列特定于 TypeScript 的规则。这些规则利用了 TypeScript 的类型信息，并通过检查类型不一致、类型错误、未使用的变量等来提供更准确的代码质量和一致性检查。
 
-通过将"typescript-eslint"与ESLint配合使用，我们可以在TypeScript项目中实现更强大和准确的代码检查。它允许我们检测类型错误、未使用的变量、不一致的类型注解等与TypeScript相关的问题，并通过使用TypeScript的类型信息提供更准确的提示和警告。
+通过将"typescript-eslint"与 ESLint 配合使用，我们可以在 TypeScript 项目中实现更强大和准确的代码检查。它允许我们检测类型错误、未使用的变量、不一致的类型注解等与 TypeScript 相关的问题，并通过使用 TypeScript 的类型信息提供更准确的提示和警告。
 
 ```shell
 pnpm add --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript
@@ -97,10 +97,10 @@ SUPPORTED TYPESCRIPT VERSIONS: >=3.3.1 <5.1.0 这个包要求安装`typescript@~
 
 ## eslint-plugin-vue
 
-"eslint-plugin-vue"是一个ESLint插件，专门为Vue.js项目提供代码检查和规范性指导。它包含一系列的规则，用于检查和强制执行Vue.js代码的最佳实践和约定。
+"eslint-plugin-vue"是一个 ESLint 插件，专门为 Vue.js 项目提供代码检查和规范性指导。它包含一系列的规则，用于检查和强制执行 Vue.js 代码的最佳实践和约定。
 
 ```shell
 pnpm add --save-dev eslint eslint-plugin-vue
 ```
 
-这个插件需要配置parser为vue-eslint-parser去解析`.vue`文件。
+这个插件需要配置 parser 为 vue-eslint-parser 去解析`.vue`文件。
