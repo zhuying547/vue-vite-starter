@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 
 import 'tdesign-vue-next/es/style/index.css'
-import 'tdesign-vue-next/dist/reset.css'
+import '@/style/index.less'
 
 const app = createApp(App)
 app.use(router)
