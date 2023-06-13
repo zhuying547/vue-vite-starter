@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "prepare": "husky install",
     "lint": "eslint --ext .vue,.js,.jsx,.ts,.tsx src",
-    "lint:fix": "eslint --ext .vue,.js,.jsx,.ts,.tsx src --max-warnings 0 --fix"
+    "lint:fix": "eslint --ext .vue,.js,.jsx,.ts,.tsx src --max-warnings 0 --fix",
+    "commit": "git-cz"
   },
   "keywords": [],
   "author": "zhuying547 <zhuying547@qq.com> (https://github.com/zhuying547)",
@@ -19,10 +20,12 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
+    "@commitlint/cz-commitlint": "^17.5.0",
     "@typescript-eslint/eslint-plugin": "^5.59.9",
     "@typescript-eslint/parser": "^5.59.9",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "commitizen": "^4.3.0",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-vue": "^9.14.1",
@@ -46,5 +49,10 @@
       "prettier --cache --write",
       "eslint --cache --fix"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   }
 }
