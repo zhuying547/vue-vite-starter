@@ -1,4 +1,5 @@
 {
+  "editor.formatOnSave": true,
   "javascript.suggest.paths": false,
   "typescript.suggest.paths": false,
   "path-intellisense.mappings": {
