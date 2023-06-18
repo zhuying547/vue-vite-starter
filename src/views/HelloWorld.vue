@@ -19,7 +19,10 @@
       </t-head-menu>
     </t-header>
     <t-content>
-      <div>Content</div>
+      <div>
+        Content
+        <ToolTip text="996icu" :options="{ placement: 'bottom' }" />
+      </div>
     </t-content>
     <t-footer> Copyright </t-footer>
   </t-layout>
