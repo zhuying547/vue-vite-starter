@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "lib": ["DOM", "DOM.Iterable", "ES6", "ESNext"],
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "isolatedModules": true,
     "strict": true,
 

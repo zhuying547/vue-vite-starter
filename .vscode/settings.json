@@ -5,5 +5,5 @@
   "path-intellisense.mappings": {
     "@": "${workspaceFolder}/src"
   },
-  "eslint.validate": ["javascript", "javascript", "vue"]
+  "eslint.validate": ["javascript", "javascriptreact", "vue"]
 }
