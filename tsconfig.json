@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Node",
     "isolatedModules": true,
     "strict": true,
-
+    "types": ["vite/client"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
