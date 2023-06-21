@@ -7,6 +7,7 @@ import { TDesignResolver } from 'unplugin-vue-components/resolvers'
 import { fileURLToPath, URL } from 'node:url'
 import path from 'path'
 export default defineConfig({
+  base: '/vue-vite-starter/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
