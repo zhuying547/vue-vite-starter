@@ -4,6 +4,7 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "isolatedModules": true,
+    "sourceMap": true,
     "strict": true,
     "types": ["vite/client"],
     "baseUrl": ".",
@@ -12,10 +13,6 @@
     },
     "skipLibCheck": true
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "node_modules/tdesign-vue-next/global.d.ts"
-  ]
+
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

@@ -1,0 +1,20 @@
+# 可选 - 工作流的名称，它将显示在 GitHub 存储库的“操作”选项卡中。
+name: learn-github-actions
+# 可选 - 从工作流生成的工作流运行的名称，该名称将显示在存储库的“操作”选项卡上的工作流运行列表中。
+run-name: ${{ github.actor }} is learning GitHub Actions
+# 指定此工作流程的触发器。
+on: [push]
+jobs:
+  # 定义一个名为 check-bats-version 作业。
+  check-bats-version:
+    # 将作业配置为在最新版本的 Ubuntu Linux 运行器上运行。
+    runs-on: ubuntu-latest
+    steps:
+      # 这是一个将存储库签出到运行器上的操作
+      - uses: actions/checkout@v3
+      # 安装指定的 Node.js 版本
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm install -g bats
+      - run: bats -v

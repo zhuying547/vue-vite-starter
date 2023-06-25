@@ -9,14 +9,17 @@ declare module 'vue' {
   export interface GlobalComponents {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    SidebarOne: typeof import('./src/components/SidebarOne.vue')['default']
-    SidebarTwo: typeof import('./src/components/SidebarTwo.vue')['default']
+    SidebarOne: typeof import('./components/SidebarOne.vue')['default']
+    SidebarTwo: typeof import('./components/SidebarTwo.vue')['default']
+    TButton: typeof import('tdesign-vue-next')['Button']
     TContent: typeof import('tdesign-vue-next')['Content']
     TFooter: typeof import('tdesign-vue-next')['Footer']
     THeader: typeof import('tdesign-vue-next')['Header']
     THeadMenu: typeof import('tdesign-vue-next')['HeadMenu']
     TIcon: typeof import('tdesign-vue-next')['Icon']
+    TInput: typeof import('tdesign-vue-next')['Input']
     TLayout: typeof import('tdesign-vue-next')['Layout']
     TMenuItem: typeof import('tdesign-vue-next')['MenuItem']
+    TSelect: typeof import('tdesign-vue-next')['Select']
   }
 }

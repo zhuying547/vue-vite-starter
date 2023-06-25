@@ -1,4 +1,5 @@
 <template>
+  <t-button>填充按钮</t-button>
   <t-layout>
     <t-header>
       <t-head-menu>

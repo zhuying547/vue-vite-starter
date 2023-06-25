@@ -4,6 +4,7 @@ import router from './router'
 
 import 'tdesign-vue-next/es/style/index.css'
 import '@/style/index.less'
+
 // import { toolTipPlugin } from '@/plugins/ToolTipPlugin'
 // ⬇️ import the create function
 import { createToolTipPlugin } from '@/plugins/ToolTipPlugin'
