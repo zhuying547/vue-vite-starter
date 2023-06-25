@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.1.0...v1.2.0) (2023-06-25)
+
+
+### Features
+
+* 添加组件的按需引入和API按需引入 ([ad5e09e](https://github.com/zhuying547/vue-vite-starter/commit/ad5e09e8b5d3039e939db0dbc2c3368fcae8d755))
+
 ## [1.1.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.0.0...v1.1.0) (2023-06-18)
 
 
