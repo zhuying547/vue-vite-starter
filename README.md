@@ -104,3 +104,7 @@ pnpm add --save-dev eslint eslint-plugin-vue
 ```
 
 这个插件需要配置 parser 为 vue-eslint-parser 去解析`.vue`文件。
+
+---
+
+基于设计规范和基础组件，提炼出典型模板和业务组件。
