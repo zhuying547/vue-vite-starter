@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.2.0...v1.3.0) (2023-06-27)
+
+
+### Features
+
+* 添加tailwindcss ([15444c1](https://github.com/zhuying547/vue-vite-starter/commit/15444c160f9b6f8351429682f8426a75d8571f99))
+
 ## [1.2.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.1.0...v1.2.0) (2023-06-25)
 
 
