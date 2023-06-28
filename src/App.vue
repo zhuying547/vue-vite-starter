@@ -1,9 +1,11 @@
 <template>
-  <div>{{ count }}</div>
+  <TConfigProvider :global-config="globalConfig">
+    <RouterView />
+  </TConfigProvider>
 </template>
 
 <script setup lang="ts">
-const count = ref(0)
+const globalConfig = {}
 </script>
 
-<style lang="less"></style>
+<style lang="less" scoped></style>

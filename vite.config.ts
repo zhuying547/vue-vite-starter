@@ -49,6 +49,7 @@ export default defineConfig({
         }),
       ],
       dts: 'src/components.d.ts',
+      dirs: ['src/components'],
     }),
   ],
 })

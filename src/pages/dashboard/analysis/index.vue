@@ -1,3 +1,3 @@
 <template>
-  <h1>SideBarOne</h1>
+  <h2>分析页</h2>
 </template>

@@ -12,6 +12,20 @@
 
 layouts 是内置的布局集合。
 
+### 布局
+
+#### 根据路由隐藏左侧菜单、隐藏导航头、footer
+
+有时我们的页面可能存在一些沉浸式的设计，需要针对路由隐藏部分布局。
+
+```js
+const layout = {
+  hideMenu: false,
+  hideNav: false,
+  hideFooter: false,
+}
+```
+
 ### 路由
 
 - `name` 和 `icon` 分别代表生成菜单项的文本和图标。

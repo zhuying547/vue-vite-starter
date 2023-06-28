@@ -1,14 +1,34 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import BasicLayout from '@/layouts/BasicLayout.vue'
+import type { RouteRecordRaw } from 'vue-router'
 
-const routes = [
+import Layout from '@/layouts/index.vue'
+
+// const LoginRoute: RouteRecordRaw = {
+//   path: '/login',
+//   name: 'Login',
+// }
+
+// Basic routing without permission
+// const basicRoutes = [LoginRoute, RootRoute]
+
+const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    component: BasicLayout,
+    redirect: '/dashboard',
+  },
+  {
+    path: '/dashboard',
+    redirect: '/dashboard/analysis',
+    component: Layout,
     children: [
       {
-        path: '',
-        redirect: '/dashboard/analysis',
+        path: 'analysis',
+        component: () => import('@/pages/dashboard/analysis/index.vue'),
+        meta: { requiresAuth: true },
+      },
+      {
+        path: 'workbench',
+        component: () => import('@/pages/dashboard/workbench/index.vue'),
       },
     ],
   },
