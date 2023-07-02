@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.3.0...v1.4.0) (2023-07-02)
+
+
+### Features
+
+* 添加默认布局 ([460bae0](https://github.com/zhuying547/vue-vite-starter/commit/460bae030cbbc3edf5118897708ea6e99715201a))
+* 简化内容 ([3d6dab9](https://github.com/zhuying547/vue-vite-starter/commit/3d6dab9124a7533c9881e43842b0506092f37ad6))
+
 ## [1.3.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.2.0...v1.3.0) (2023-06-27)
 
 
