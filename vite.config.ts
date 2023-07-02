@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite'
+
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
-// 通过插件按需引入
-import AutoImport from 'unplugin-auto-import/vite' // Auto import APIs auto-imports.d.ts
+import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import { TDesignResolver } from 'unplugin-vue-components/resolvers' // 自定义解析器
+import { TDesignResolver } from 'unplugin-vue-components/resolvers'
 
 import { fileURLToPath, URL } from 'node:url'
 import path from 'path'

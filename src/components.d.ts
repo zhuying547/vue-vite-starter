@@ -7,16 +7,12 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    LayoutContent: typeof import('./layouts/components/LayoutContent.vue')['default']
-    LayoutHeader: typeof import('./layouts/components/LayoutHeader.vue')['default']
-    LayoutSideBar: typeof import('./layouts/components/LayoutSideBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TAside: typeof import('tdesign-vue-next')['Aside']
     TButton: typeof import('tdesign-vue-next')['Button']
     TConfigProvider: typeof import('tdesign-vue-next')['ConfigProvider']
     TContent: typeof import('tdesign-vue-next')['Content']
-    TFooter: typeof import('tdesign-vue-next')['Footer']
     THeader: typeof import('tdesign-vue-next')['Header']
     THeadMenu: typeof import('tdesign-vue-next')['HeadMenu']
     TIcon: typeof import('tdesign-vue-next')['Icon']
