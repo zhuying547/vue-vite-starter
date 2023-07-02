@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/zhuying547/vue-vite-starter/compare/v1.4.0...v1.4.1) (2023-07-02)
+
+
+### Bug Fixes
+
+* change styles to style ([f6acc12](https://github.com/zhuying547/vue-vite-starter/commit/f6acc12dca3d94c29cef52ea1c7f038854820729))
+
 ## [1.4.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.3.0...v1.4.0) (2023-07-02)
 
 
