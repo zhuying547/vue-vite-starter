@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/zhuying547/vue-vite-starter/compare/v1.4.1...v1.4.2) (2023-07-02)
+
+
+### Bug Fixes
+
+* 修改@tsconfig/node18的版本，模块解析为node10 ([6c483ca](https://github.com/zhuying547/vue-vite-starter/commit/6c483cab6b22d6f0112f428b7c3a7e9a380a47aa))
+
 ## [1.4.1](https://github.com/zhuying547/vue-vite-starter/compare/v1.4.0...v1.4.1) (2023-07-02)
 
 
