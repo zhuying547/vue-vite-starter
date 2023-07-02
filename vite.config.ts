@@ -22,7 +22,7 @@ export default defineConfig({
       less: {
         modifyVars: {
           hack: `true; @import (reference) "${path.resolve(
-            'src/styles/variables.less'
+            'src/style/variables.less'
           )}";`,
         },
         math: 'strict',
