@@ -9,7 +9,7 @@ import 'tippy.js/dist/tippy.css' // optional for styling
 import { tooltipOptionsInject } from './'
 import type { Instance } from 'tippy.js'
 
-import { onMounted, ref, onUpdated, onUnmounted, inject, Prop } from 'vue'
+import { onMounted, ref, onUpdated, onUnmounted, inject } from 'vue'
 
 // accept the text prop so message can be customized
 const props = defineProps({

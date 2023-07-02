@@ -1,18 +1,17 @@
 {
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
     "isolatedModules": true,
-    "sourceMap": true,
-    "strict": true,
-    "types": ["vite/client"],
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    },
-    "skipLibCheck": true
+    "esModuleInterop": true,
+    "types": ["vite/client", "tdesign-vue-next/global"]
   },
-
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "files": []
 }
