@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.4.2...v1.5.0) (2023-07-02)
+
+
+### Features
+
+* 把layout进行组件拆分 ([279c973](https://github.com/zhuying547/vue-vite-starter/commit/279c973b33c3d76c692af5a71700bb2b9e08b8cf))
+
 ## [1.4.2](https://github.com/zhuying547/vue-vite-starter/compare/v1.4.1...v1.4.2) (2023-07-02)
 
 
