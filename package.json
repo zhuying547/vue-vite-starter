@@ -1,6 +1,6 @@
 {
   "name": "vite-vue-starter",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "A modern vue admin. It is based on Vue, Vite and TypeScript",
   "private": true,
   "type": "module",
