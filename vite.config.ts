@@ -39,8 +39,8 @@ export default defineConfig({
           library: 'vue-next',
         }),
       ],
-      imports: ['vue', 'vue-router'],
       dts: 'src/auto-imports.d.ts',
+      imports: ['vue', 'vue-router'],
     }),
     Components({
       resolvers: [
@@ -49,7 +49,12 @@ export default defineConfig({
         }),
       ],
       dts: 'src/components.d.ts',
-      dirs: ['src/components'],
+      types: [
+        {
+          from: 'vue-router',
+          names: ['RouterLink', 'RouterView'],
+        },
+      ],
     }),
   ],
 })
