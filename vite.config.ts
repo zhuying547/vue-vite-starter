@@ -37,6 +37,7 @@ export default defineConfig({
       resolvers: [
         TDesignResolver({
           library: 'vue-next',
+          esm: true,
         }),
       ],
       dts: 'src/auto-imports.d.ts',
@@ -46,6 +47,7 @@ export default defineConfig({
       resolvers: [
         TDesignResolver({
           library: 'vue-next',
+          esm: true,
         }),
       ],
       dts: 'src/components.d.ts',
