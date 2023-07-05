@@ -7,11 +7,5 @@
       "path": "./tsconfig.app.json"
     }
   ],
-  "compilerOptions": {
-    "target": "ESNext",
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "types": ["vite/client", "tdesign-vue-next/global"]
-  },
   "files": []
 }

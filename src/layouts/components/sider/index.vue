@@ -1,8 +1,18 @@
 <template>
-  <t-aside>
+  <t-aside class="layout-aside">
     <t-menu theme="light" default-value="item1" :collapsed="collapsed">
-      <t-menu-item value="item1"> 仪表盘 </t-menu-item>
-      <t-menu-item value="item2"> 资源列表 </t-menu-item>
+      <t-menu-item value="item1">
+        <template #icon>
+          <t-icon name="app" />
+        </template>
+        仪表盘
+      </t-menu-item>
+      <t-menu-item value="item2">
+        <template #icon>
+          <t-icon name="code" />
+        </template>
+        资源列表
+      </t-menu-item>
       <t-submenu value="3">
         <template #icon>
           <t-icon name="mail" />
@@ -31,3 +41,8 @@ const changeCollapsed = () => {
   collapsed.value = !collapsed.value
 }
 </script>
+<style lang="less" scoped>
+.layout-aside {
+  width: fit-content;
+}
+</style>

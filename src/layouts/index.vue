@@ -19,10 +19,4 @@ import Aside from './components/sider/index.vue'
 .layout {
   height: 100vh;
 }
-
-.layout-aside {
-  .t-layout__sider {
-    width: fit-content;
-  }
-}
 </style>

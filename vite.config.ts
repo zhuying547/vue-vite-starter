@@ -34,12 +34,12 @@ export default defineConfig({
     vue(),
     vueJsx(),
     AutoImport({
-      imports: ['vue', 'vue-router'],
       resolvers: [
         TDesignResolver({
           library: 'vue-next',
         }),
       ],
+      imports: ['vue', 'vue-router'],
       dts: 'src/auto-imports.d.ts',
     }),
     Components({
