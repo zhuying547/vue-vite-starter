@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.6.0...v1.7.0) (2023-07-05)
+
+
+### Features
+
+* 添加vitepress主打vue全家桶 ([7a6bb9a](https://github.com/zhuying547/vue-vite-starter/commit/7a6bb9a0f7d6b624cf8e9a736c19a349dd0f994b))
+
 ## [1.6.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.5.0...v1.6.0) (2023-07-05)
 
 
