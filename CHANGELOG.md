@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.5.0...v1.6.0) (2023-07-05)
+
+
+### Features
+
+* 使用ESM产物，用于自定义主体中直接LESS ([abd12a6](https://github.com/zhuying547/vue-vite-starter/commit/abd12a643fe45d51e69b77dce8284ef879492319))
+
 ## [1.5.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.4.2...v1.5.0) (2023-07-02)
 
 
