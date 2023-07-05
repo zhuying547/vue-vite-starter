@@ -1,22 +1,22 @@
 <template>
   <t-aside class="layout-aside">
-    <t-menu theme="light" default-value="item1" :collapsed="collapsed">
+    <t-menu v-model="value" theme="light" :collapsed="collapsed">
       <t-menu-item value="item1">
-        <template #icon>
+        <!-- <template #icon>
           <t-icon name="app" />
-        </template>
+        </template> -->
         仪表盘
       </t-menu-item>
       <t-menu-item value="item2">
-        <template #icon>
+        <!-- <template #icon>
           <t-icon name="code" />
-        </template>
+        </template> -->
         资源列表
       </t-menu-item>
       <t-submenu value="3">
-        <template #icon>
+        <!-- <template #icon>
           <t-icon name="mail" />
-        </template>
+        </template> -->
         <template #title>
           <span>消息区</span>
         </template>
@@ -26,20 +26,24 @@
           <t-menu-item value="3-1-3"> 三级菜单内容 </t-menu-item>
         </t-submenu>
       </t-submenu>
-      <template #operations>
+      <!-- <template #operations>
         <t-button variant="text" shape="square" @click="changeCollapsed">
-          <template #icon><t-icon name="view-list" /></template>
+          <template #icon><t-icon :name="iconName" /></template>
         </t-button>
-      </template>
+      </template> -->
     </t-menu>
   </t-aside>
 </template>
 <script setup lang="ts">
-const collapsed = ref(false)
+const value = ref('item2')
 
-const changeCollapsed = () => {
-  collapsed.value = !collapsed.value
-}
+const collapsed = ref(false)
+// const iconName = computed(() =>
+//   collapsed.value ? 'chevron-right' : 'chevron-left'
+// )
+// const changeCollapsed = () => {
+//   collapsed.value = !collapsed.value
+// }
 </script>
 <style lang="less" scoped>
 .layout-aside {
