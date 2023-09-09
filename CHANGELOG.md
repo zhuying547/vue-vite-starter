@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.7.0...v1.8.0) (2023-09-09)
+
+
+### Features
+
+* **core:** 升级 tdesign-vue-next 到最新版本 ([f6bf352](https://github.com/zhuying547/vue-vite-starter/commit/f6bf3520b22cdd8a71cd47ffada0613357140629))
+
 ## [1.7.0](https://github.com/zhuying547/vue-vite-starter/compare/v1.6.0...v1.7.0) (2023-07-05)
 
 
