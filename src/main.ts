@@ -6,6 +6,9 @@ import router from './router'
 // ESM 模块适用于一些特定的构建工具或打包器，通常用于构建应用程序。在使用 ESM 模块时，需要使用适当的构建工具将其转换为适合目标环境的代码。
 
 // ES用的是编译后的CSS，ESM用的是LESS
+// import 'tdesign-vue-next/es/style/index.css'
+import 'tdesign-vue-next/dist/reset.css'
+// 使用 less 变量 针对组件进行精细化定制
 import 'tdesign-vue-next/esm/style/index.js'
 import '@/style/index.less'
 
